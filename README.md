@@ -1,5 +1,6 @@
 # iPark Project
-frontend repo -> https://github.com/2JYK/iPark_frontend<br>
+> https://www.ilovepark.net <br>
+> [frontend repo](https://github.com/2JYK/iPark_frontend)
 
 ## 📌 프로젝트 개요
 - 공원을 중심으로 한 지역의 커뮤니티 구성
@@ -32,4 +33,15 @@ frontend repo -> https://github.com/2JYK/iPark_frontend<br>
 
 <img width="1242" alt="ipark" src="https://user-images.githubusercontent.com/104303285/185301146-12508b43-dd0f-4bd1-afa1-5666f2fab8ea.png">
 
+<br>
+
+## 📌 사용자 피드백
+- 프로젝트의 방향이나 여건 상 맞지 않는 피드백은 필터링하고 **7일의 기간동안 마무리할 수 있을 것 같은 피드백을 선별**해 아래와 같이 해결
+- 공원과 공영 주차장 공공 데이터들은 인터넷으로는 추가적으로 조사해 퀄리티를 높일 수 없다 판단해 보류
+
+<img width="530" alt="스크린샷 2022-08-22 오후 6 45 13" src="https://user-images.githubusercontent.com/99387514/185892052-7cecef17-bb12-4cf0-ab2a-f6d28a736bda.png">
+
+<br>
+
+## 📌 트러블슈팅
 
