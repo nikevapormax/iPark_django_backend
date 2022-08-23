@@ -132,6 +132,8 @@ https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c76
 &nbsp;&nbsp;&nbsp;&nbsp;- 기존에는 공원의 모든 목록을 공원 이름을 가나다 순으로 정렬해 사용자에게 제시 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;- 공원 목록이 너무 많아 원하는 공원을 찾기 어렵다는 사용자 피드백이 있었고, 이를 반영하기 위해 공원 이름의 초성을 사용해 공원을 나누어 사용자에게 제시 <br>
 https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c768bcc7b1e61b5eec1f3/park/views.py#L214 <br>
-https://github.com/nikevapormax/iPark_frontend/blob/1145041a5c36d3e4e6fbe5ee520914ff86d2a565/static/js/toggle.js#L2 <br>
+front : https://github.com/nikevapormax/iPark_frontend/blob/1145041a5c36d3e4e6fbe5ee520914ff86d2a565/static/js/toggle.js#L2 <br>
+<br>
+> velog : https://velog.io/@nikevapormax/0808-iPark-project-%ED%94%BC%EB%93%9C%EB%B0%B1-%EC%88%98%EC%A0%95#%ED%86%A0%EA%B8%80%EC%9D%98-%EA%B3%B5%EC%9B%90-%EB%AA%A9%EB%A1%9D-%EB%82%98%EC%97%B4-%EB%B0%A9%EC%8B%9D-%EB%B3%80%EA%B2%BD
 </details>
 <br>
