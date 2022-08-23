@@ -61,3 +61,13 @@
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp; > github issue : https://github.com/2JYK/iPark_django_backend/issues/34 <br>
 </details>
+
+<details>
+<summary>through 테이블 사용 시 에러 발생</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;- 애초에 모델 생성 시 같이 작성하였다면 에러가 나지 않았을 것이지만 한참 뒤에 생성하게 되어 에러 발생 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- runserver에서는 에러가 나지 않지만, 테스트 코드 작성 시 에러 발생 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code style="white-space:nowrap;">django.db.utils.OperationalError: table "park_park_option" already exists</code> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- migrate를 지웠다가 다시 생성하는 방법을 통해 에러 해결 <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; > github issue : https://github.com/2JYK/iPark_django_backend/issues/57 <br>
+</details>
