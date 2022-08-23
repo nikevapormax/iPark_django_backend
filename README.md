@@ -110,4 +110,13 @@ https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c76
 &nbsp;&nbsp;&nbsp;&nbsp;- <code style="white-space:nowrap;">try except 구문</code>을 활용해 데이터가 없는 경우 빈 문자열을 보내도록 조치해 에러 해결 <br>
 https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c768bcc7b1e61b5eec1f3/park/views.py#L49
 </details>
+
+<details>
+<summary>공원 이름 검색 기능 추가로 인한 공원 지역 검색 기능 코드 수정</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;- 기존 로직은 공원의 옵션과 공원의 지역으로만 공원을 검색해 8 가지 밖에 되지 않는 공원 옵션 이외의 것들을 지역으로 처리 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 사용자 피드백 반영을 위해 공원 이름 검색 기능을 추가하게 되어 공원 이름과 공원 지역을 구분할 필요가 생김 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 공원 이름에 공원 지역과 비슷한 글자가 포함되게 되어 로직이 제대로 수행되지 않음 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 공원 지역의 맨 마지막 글자에 <code style="white-space:nowrap;">구 또는 시</code>가 있다는 점을 생각해 아래와 같이 로직 작성 <br>
+https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c768bcc7b1e61b5eec1f3/park/views.py#L178
+</details>
 <br>
