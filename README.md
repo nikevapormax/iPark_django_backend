@@ -81,7 +81,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- 사용자의 피드백을 반영하기 위해 다시 항목에 맞는 에러 메세지를 사용자에게 제시하였으며, alert창이 아닌 틀린 부분에 표시되도록 수정 <br>
     https://github.com/nikevapormax/iPark_django_backend/blob/942a473ba96c7aadaeb19ac6b3900b91042fcf8d/user/views.py#L34
     https://github.com/nikevapormax/iPark_django_backend/blob/942a473ba96c7aadaeb19ac6b3900b91042fcf8d/user/serializers.py#L22
-    https://github.com/nikevapormax/iPark_frontend/blob/1145041a5c36d3e4e6fbe5ee520914ff86d2a565/static/js/api_user.js#L47
+front : https://github.com/nikevapormax/iPark_frontend/blob/1145041a5c36d3e4e6fbe5ee520914ff86d2a565/static/js/api_user.js#L47 <br>
+<br>
+> velog : https://velog.io/@nikevapormax/0809-iPark-project-%ED%94%BC%EB%93%9C%EB%B0%B1-%EC%88%98%EC%A0%95
 </details>
 
 <details>
