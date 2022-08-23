@@ -138,4 +138,15 @@ front : https://github.com/nikevapormax/iPark_frontend/blob/1145041a5c36d3e4e6fb
 <br>
 > velog : https://velog.io/@nikevapormax/0808-iPark-project-%ED%94%BC%EB%93%9C%EB%B0%B1-%EC%88%98%EC%A0%95#%ED%86%A0%EA%B8%80%EC%9D%98-%EA%B3%B5%EC%9B%90-%EB%AA%A9%EB%A1%9D-%EB%82%98%EC%97%B4-%EB%B0%A9%EC%8B%9D-%EB%B3%80%EA%B2%BD
 </details>
+
+<details>
+<summary>테스트 코드에 성공 이외의 경우에 대한 테스트 진행</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;- 기존 테스트 코드는 성공한 경우에 대한 테스트 코드와 실패했을 경우에 대한 테스트 케이스만 존재 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 실패에 대한 최대한 많은 케이스를 if 문 별로 만들기 위해 노력했으며, 테스트 코드를 작성하며 잘못된 serializer의 코드를 고치게 되어 중요성을 알게 됨 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- park의 인기순 공원 나열과 토글 공원 리스트 부분은 단순한 get 요청이어서 실패하는 경우에 대해 작성하지 않음 <br>
+user app(11 ~ 끝까지) : https://github.com/nikevapormax/iPark_django_backend/blob/7bbece5e799671bb5fab07f7b7203230d031c626/user/tests.py#L11 <br>
+park app(60 ~ 끝까지) : https://github.com/nikevapormax/iPark_django_backend/blob/7bbece5e799671bb5fab07f7b7203230d031c626/park/tests.py#L60 <br>
+ <br>
+> velog : https://velog.io/@nikevapormax/0811-0813-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1
+</details>
 <br>
