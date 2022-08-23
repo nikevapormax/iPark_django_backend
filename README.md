@@ -102,5 +102,12 @@ https://github.com/nikevapormax/iPark_django_backend/blob/531ab77844a2fefb2a3887
 &nbsp;&nbsp;&nbsp;&nbsp;- 이를 해결하기 위해 <code style="white-space:nowrap;">strip</code>을 사용해 괄호를 제거 <br>
 https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c768bcc7b1e61b5eec1f3/park/views.py#L26
 </details>
-<br>
 
+<details>
+<summary>주차장 데이터 프론트단으로 전송 시의 에러 해결</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;- 공영 주차장이 모든 공원 근처에 존재하지 않아 주차장과 공원을 매칭한 데이터가 존재하지 않는 경우 발생 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 주차장과 공원의 데이터를 for문을 사용해 프론트 단에 보내줄 list에 데이터를 append하는 코드의 로직으로 인해 데이터가 비어있는 경우는 index를 읽을 수 없다는 에러 발생 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- <code style="white-space:nowrap;">try except 구문</code>을 활용해 데이터가 없는 경우 빈 문자열을 보내도록 조치해 에러 해결 <br>
+https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c768bcc7b1e61b5eec1f3/park/views.py#L49
+</details>
+<br>
