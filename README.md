@@ -119,4 +119,11 @@ https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c76
 &nbsp;&nbsp;&nbsp;&nbsp;- 공원 지역의 맨 마지막 글자에 <code style="white-space:nowrap;">구 또는 시</code>가 있다는 점을 생각해 아래와 같이 로직 작성 <br>
 https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c768bcc7b1e61b5eec1f3/park/views.py#L178
 </details>
+
+<details>
+<summary>공원 검색 결과가 없을 때의 에러 처리</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;- 공원의 검색결과가 없는 경우 <code style="white-space:nowrap;">QueryDoesNotExist</code> 에러로 인해 internal server error가 발생 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- <code style="white-space:nowrap;">try except 구문</code>을 활용해 쿼리 결과가 없을 시 공원 검색 결과가 없다는 에러 메세지를 사용자에게 제시(183~200) <br>
+https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c768bcc7b1e61b5eec1f3/park/views.py#L183 <br>
+</details>
 <br>
