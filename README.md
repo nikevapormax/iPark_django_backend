@@ -83,6 +83,14 @@
     https://github.com/nikevapormax/iPark_django_backend/blob/942a473ba96c7aadaeb19ac6b3900b91042fcf8d/user/serializers.py#L22
     https://github.com/nikevapormax/iPark_frontend/blob/1145041a5c36d3e4e6fbe5ee520914ff86d2a565/static/js/api_user.js#L47
 </details>
+
+<details>
+<summary>회원의 비밀번호 수정 코드 오류 해결</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;- 회원의 비밀번호를 수정하는 코드 작성 시 <code style="white-space:nowrap;">validated_data</code>에 포함된 비밀번호를 서로 비교하도록 코드 작성 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 프론트엔드와 연동해 비밀번호를 수정하고, 포스트맨을 통해 비밀번호를 수정할 때는 문제가 없었으나 <code style="white-space:nowrap;">테스트 코드</code> 작성 시 에러 발생 <br>
+    https://github.com/nikevapormax/iPark_django_backend/blob/531ab77844a2fefb2a38878bca05d4b43ede7172/user/tests.py#L330
+&nbsp;&nbsp;&nbsp;&nbsp;- serializer의 코드에 문제가 있다는 것을 발견하고 아래와 같이 수정 (100번줄 ~)
+https://github.com/nikevapormax/iPark_django_backend/blob/531ab77844a2fefb2a38878bca05d4b43ede7172/user/serializers.py#L100
+</details>
 <br>
 
-## 📌 트러블슈팅
