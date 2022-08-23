@@ -92,5 +92,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- serializer의 코드에 문제가 있다는 것을 발견하고 아래와 같이 수정 (100번줄 ~)
 https://github.com/nikevapormax/iPark_django_backend/blob/531ab77844a2fefb2a38878bca05d4b43ede7172/user/serializers.py#L100
 </details>
+
+<details>
+<summary>주차장과 공원 사이 거리 계산</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;- csv 파일에 있는 공원의 위•경도와 주차장의 위•경도를 geopy 모듈의 location 함수를 사용해 거리 계산 시도 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 구글 코랩에서는 바로 계산이 되었으나, 해당 머신러닝 기능을 프로젝트에 사용하기 위해 함수화를 진행하며 계산이 되지 않음 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 디버깅을 통해 아래 코드의 위•경도가 <code style="white-space:nowrap;">괄호로 인해 문자열</code>이 됨을 체크 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code style="white-space:nowrap;">park_data["distance"] = park_data.apply(lambda x: distance.distance(x["park_coord"], x["parking_lot_coord"].km, axis=1)</code> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 이를 해결하기 위해 <code style="white-space:nowrap;">strip</code>을 사용해 괄호를 제거 <br>
+https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c768bcc7b1e61b5eec1f3/park/views.py#L26
+</details>
 <br>
 
