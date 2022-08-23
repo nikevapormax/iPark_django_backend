@@ -126,4 +126,12 @@ https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c76
 &nbsp;&nbsp;&nbsp;&nbsp;- <code style="white-space:nowrap;">try except 구문</code>을 활용해 쿼리 결과가 없을 시 공원 검색 결과가 없다는 에러 메세지를 사용자에게 제시(183~200) <br>
 https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c768bcc7b1e61b5eec1f3/park/views.py#L183 <br>
 </details>
+
+<details>
+<summary>공원 토글 리스트 사용자 피드백 반영</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;- 기존에는 공원의 모든 목록을 공원 이름을 가나다 순으로 정렬해 사용자에게 제시 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 공원 목록이 너무 많아 원하는 공원을 찾기 어렵다는 사용자 피드백이 있었고, 이를 반영하기 위해 공원 이름의 초성을 사용해 공원을 나누어 사용자에게 제시 <br>
+https://github.com/nikevapormax/iPark_django_backend/blob/340c931a1db3004c5c2c768bcc7b1e61b5eec1f3/park/views.py#L214 <br>
+https://github.com/nikevapormax/iPark_frontend/blob/1145041a5c36d3e4e6fbe5ee520914ff86d2a565/static/js/toggle.js#L2 <br>
+</details>
 <br>
