@@ -52,3 +52,12 @@
     <br>
 &nbsp;&nbsp;&nbsp;&nbsp; > github issue : https://github.com/2JYK/iPark_django_backend/issues/29 <br>
 </details>
+
+<details>
+<summary>TypeError: expected string or bytes-like object 발생</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;- 정규표현식을 사용할 떄 해당 에러 발생 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- <code style="white-space:nowrap;">birthday_input = correct_birthday.match(data.get("birthday", ""))</code>에서 에러가 발생하였고, 정규표현식을 사용할때는 생년월일의 값이 str로 들어와야 유효성을 검증할 수 있음 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- <code style="white-space:nowrap;">birthday_input = correct_birthday.match(str(data.get("birthday", "")))</code>로 수정해 에러 해결 <br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; > github issue : https://github.com/2JYK/iPark_django_backend/issues/34 <br>
+</details>
