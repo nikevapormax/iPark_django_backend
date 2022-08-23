@@ -71,3 +71,18 @@
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp; > github issue : https://github.com/2JYK/iPark_django_backend/issues/57 <br>
 </details>
+
+<details>
+<summary>사용자 관련 기능 사용 시 에러 처리에 대한 고민</summary>
+&nbsp;&nbsp;&nbsp;&nbsp;- 맨 처음 기능 구현 시에는 기본 validator와 serializer의 custom validator의 정규표현식을 사용해 틀린 부분에 대한 에러 메세지를 사용자에게 alert를 통해 제시하도록 작성 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- model 생성 시 각 항목에 맞는 field를 사용했기에 기본 validator의 에러 메세지가 사용자에게 제시되고, 대다수의 항목은 정규표현식을 바탕으로 한 에러메세지가 반영되지 않음 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 서비스를 사용하면서 필요없는 부분을 삭제하고 정규표현식이 불필요한 항목들을 수정 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 추가적으로 에러 메세지가 반영되지 않았던 부분들이 많고 틀린 부분을 다 보여주는 것이 보안에 좋지 않을수도 있다는 피드백이 있어 에러 메세지를 하나로 통일 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 사용자의 피드백을 반영하기 위해 다시 항목에 맞는 에러 메세지를 사용자에게 제시하였으며, alert창이 아닌 틀린 부분에 표시되도록 수정 <br>
+    https://github.com/nikevapormax/iPark_django_backend/blob/942a473ba96c7aadaeb19ac6b3900b91042fcf8d/user/views.py#L34
+    https://github.com/nikevapormax/iPark_django_backend/blob/942a473ba96c7aadaeb19ac6b3900b91042fcf8d/user/serializers.py#L22
+    https://github.com/nikevapormax/iPark_frontend/blob/1145041a5c36d3e4e6fbe5ee520914ff86d2a565/static/js/api_user.js#L47
+</details>
+<br>
+
+## 📌 트러블슈팅
