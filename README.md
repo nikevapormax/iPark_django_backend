@@ -46,7 +46,7 @@
 ## 📌 트러블슈팅
 <details>
 <summary>회원정보 수정을 시도하면 새로운 사용자가 생성됨</summary>
-&nbsp;&nbsp;&nbsp;&nbsp;- <code style="white-space:nowrap;">partial=True</code>로 인해 입력한 정보만 가진 사용자가 생성됨 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;- 현재 로그인한 사용자의 정보를 같이 보내주지 않아 <code style="white-space:nowrap;">partial=True</code>로 인해 입력한 정보만 가진 사용자가 생성됨 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;- serializer에 로그인한 사용자의 데이터를 추가해 아래와 같이 보내주어 사용자의 정보를 수정할 수 있도록 조치 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code style="white-space:nowrap;">serializer = UserSerializer(user, data=request.data, partial=True)</code> <br>
     <br>
